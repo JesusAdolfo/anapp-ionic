@@ -1,0 +1,41 @@
+<ion-view view-title="Propuestas y denuncias">
+  <ion-content>
+
+    <!-- content goes here -->
+    <ion-list>
+
+
+        <div ng-repeat="thing in ctrl.things"
+             class="list card"
+             ui-sref="main.listDetail({ id: '{{ thing._id }}' })">
+
+          <div class="item item-avatar">
+            <img src="{{ctrl.mainUrl}}/api/media?path=server/images/default-user.jpg">
+            <h2>{{thing.postedBy.name}}</h2>
+            <p>{{thing.createdAt | date: "dd/MM/yyyy \'a las\' h:mma"}}</p>
+          </div>
+
+          <div class="item item-body">
+            <img class="full-image" src="{{ctrl.mainUrl}}/api/media?path={{thing.image}}">
+            <p>
+              {{thing.name}}
+            </p>
+            <p>
+              <a href="#" class="subdued">1 Me gusta</a>
+              <a href="#" class="subdued">5 Commentarios</a>
+            </p>
+          </div>
+
+        </div>
+        <!--<img src='{{ctrl.mainUrl}}/api/media?path={{thing.image}}'>-->
+
+        <!--<h2>-->
+          <!--{{thing.name}}-->
+        <!--</h2>-->
+
+
+        <!--<i class="icon ion-chevron-right icon-accessory"></i>-->
+    </ion-list>
+
+  </ion-content>
+</ion-view>

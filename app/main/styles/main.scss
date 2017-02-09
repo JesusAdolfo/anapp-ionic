@@ -1,0 +1,48 @@
+$primary-color: #626262;
+
+.bar.bar-positive {
+  background: $primary-color;
+  border: none;
+}
+.button-positive{
+  background: $primary-color !important;
+}
+.popup-body{
+  text-align: center;
+}
+#side_menu {
+  background-image: url("../assets/images/menu-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#side_menu .item-complex .item-content,
+#side_menu .item-radio .item-content,
+#side_menu .item {
+  background: transparent;
+  color: #f1f2f3;
+  border: none;
+}
+
+#side-menu-logo{
+  min-width: 150px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+#side-menu-logo-container a {
+  padding: 16px 20px 16px 16px;
+}
+
+#side_menu a {
+  display: flex;
+  align-items: center;
+}
+
+.side-icon-container{
+  width: 60px;
+  text-align: center;
+}
+
+.side-icon {
+  max-height: 30px;
+}

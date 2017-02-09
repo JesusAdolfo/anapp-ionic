@@ -1,0 +1,28 @@
+<ion-view view-title="Detalle">
+  <!-- do you want padding -->
+  <ion-content class="padding">
+
+    <!-- content goes here -->
+    <div
+         class="list card">
+      <div class="item item-avatar">
+        <img src="{{ctrl.mainUrl}}/api/media?path=server/images/default-user.jpg">
+        <h2>{{ctrl.thing.postedBy.name}}</h2>
+        <p>{{ctrl.thing.createdAt | date: "dd/MM/yyyy \'a las\' h:mma"}}</p>
+      </div>
+
+      <div class="item item-body">
+        <img class="full-image" src="{{ctrl.mainUrl}}/api/media?path={{ctrl.thing.image}}">
+        <p>
+          {{ctrl.thing.name}}
+        </p>
+        <p>
+          <a href="#" class="subdued">1 Me gusta</a>
+          <a href="#" class="subdued">5 Commentarios</a>
+        </p>
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-view>
